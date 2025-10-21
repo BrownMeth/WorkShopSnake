@@ -1,0 +1,14 @@
+This folder holds scenes for the Unity project. No binary scene files are added in this PR.
+
+To create the initial scene:
+1. Open Unity and create a new scene named "Main".
+2. Create a Terrain or Plane and add basic lighting.
+3. Create an empty GameObject called "GameManager" and attach Assets/Scripts/GameManager.cs.
+4. Create a player head (Capsule) named "SnakeHead" and attach Rigidbody + Assets/Scripts/Snake/SnakeController.cs.
+   - Configure Rigidbody: Mass ~1, Drag 0.1, Freeze Rotation X/Z (optional).
+5. Create a folder Prefabs and add a simple cube/sphere prefab to serve as a segment.
+6. Create an empty GameObject named "Segments" and add Assets/Scripts/Snake/SegmentFollower.cs. Assign the head and drag some segment prefabs into the list.
+7. Create an empty GameObject called "SpawnManager" and attach Assets/Scripts/Spawn/SpawnManager.cs. Assign some simple food prefabs (sphere scaled small).
+8. Create UI canvas and minimal HUD (score text) and wire ScoreManager (create empty GameObject ScoreManager and add the script).
+
+Save the scene as Assets/Scenes/Main.unity
